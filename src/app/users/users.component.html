@@ -1,0 +1,22 @@
+<div class="container mt-5" *ngFor="let usuario of usuarios">
+    <h3>Perfil de Usuario</h3>
+    <div class="row mt-3">
+        <!-- Columna de 4 espacios -->
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Información del Usuario</h5>
+                    <ul class="list-group">
+                        <li class="list-group-item"><strong>Nombre:</strong> {{usuario.name}}</li>
+                        <li class="list-group-item"><strong>Nombre de Usuario:</strong>{{usuario.username}}</li>
+                        <li class="list-group-item"><strong>Email:</strong>{{usuario.email}}</li>
+                        <li class="list-group-item"><strong>Ciudad:</strong> {{usuario.address.city}}</li>
+                        <li class="list-group-item"><strong>Teléfono:</strong>{{usuario.phone}}</li>
+                        <li class="list-group-item"><strong>Sitio Web:</strong> {{usuario.website}}</li>
+                        <li class="list-group-item"><strong>Compañía:</strong> {{usuario.company.name}}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

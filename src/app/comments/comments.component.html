@@ -1,0 +1,7 @@
+<main>
+    <section class="post" *ngFor="let comentario of comentarios">
+      <h3>Nombre: {{ comentario.name }}</h3>
+      <p>{{ comentario.body }}</p>
+      <p style="text-align: end;">{{comentario.email}}</p>
+    </section>
+  </main>

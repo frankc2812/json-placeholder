@@ -1,0 +1,37 @@
+main {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2%;
+    justify-content: space-between;
+}
+
+.post {
+    width: calc(50% - 20px);
+    border: 1px solid black;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 2rem;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.post h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.post p {
+    margin: 0;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.post p[style*="text-align: end;"] {
+    text-align: end;
+    color: rgb(80, 80, 200);
+}
